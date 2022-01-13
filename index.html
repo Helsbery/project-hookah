@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <title>Дым Кудрявый</title>
+  <link href="./image/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+  <!-- Line-Awesome -->
+  <link href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        rel="stylesheet">
+
+  <!-- Scroll-behavior -->
+  <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
+  <!-- Body Scroll Lock -->
+  <script src="./js/libraries/bodyScrollLock.min.js"></script>
+
+  <!-- Scroll Polyfill -->
+  <script src="./js/libraries/smoothscroll.js"></script>
+
+  <link href="./css/normalize.css" rel="stylesheet">
+
+  <!-- Yandex-Map -->
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=2334e2dc-a928-4c00-9744-3d14faf742d5&lang=ru_RU"></script>
+  <!-- Swiper -->
+  <link href="https://unpkg.com/swiper@7/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- Custom Style -->
+  <link href="./css/style.css" rel="stylesheet">
+  <script defer src="./js/script.js"></script>
+
+</head>
+<body>
+<header class="header">
+  <div class="header-container container flex">
+    <img alt="Logo-Дым кудрявый" class="header-logo" src="./image/1200/logo.png">
+    <div class="header-right flex">
+      <ul class="social-list header-social list-reset">
+        <li class="social-item">
+          <a aria-label="Страница Вконтакте" class="social-link" href="https://vk.com/" target="_blank" rel="noopener">
+            <svg fill="none" height="11" viewBox="0 0 19 11" width="19" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.17363 10.997H10.2884C10.3838 10.995 10.4776 10.9726 10.5638 10.9313C10.65 10.8899 10.7266 10.8305 10.7884 10.7569C10.8844 10.6045 10.9353 10.4274 10.935 10.2466C10.935 10.2466 10.9056 8.71613 11.6098 8.47604C12.2845 8.26604 13.1646 9.97645 14.1328 10.6369C14.5054 10.8886 14.947 11.0147 15.3945 10.997H17.8881C18.0641 10.997 19.1498 10.8469 18.5922 9.82505C18.5335 9.73509 18.2403 9.04491 16.7146 7.60436C15.1304 6.10395 15.3651 6.34404 17.2427 3.7629C18.3869 2.20231 18.8269 1.24194 18.7097 0.821943C18.6216 0.491897 17.7122 0.551762 17.7122 0.551762H14.8944C14.7739 0.535783 14.6513 0.556627 14.5425 0.611626C14.4396 0.688969 14.3587 0.792429 14.3078 0.911581C14.0207 1.69137 13.6673 2.44445 13.2518 3.16236C11.9901 5.35327 11.4916 5.47458 11.286 5.32318C10.8172 4.99313 10.9341 4.06286 10.9341 3.37236C10.9341 1.24163 11.2569 0.371218 10.3181 0.131126C9.88741 0.0187083 9.44154 -0.021838 8.99799 0.011081C8.0004 0.011081 7.1497 0.0110808 6.65091 0.251172C6.32807 0.401308 6.09337 0.761445 6.24025 0.791219C6.55575 0.824243 6.84795 0.974683 7.06032 1.21344C7.35378 1.60366 7.35378 2.53394 7.35378 2.53394C7.35378 2.53394 7.52974 5.02481 6.9725 5.32508C6.59122 5.53508 6.06305 5.11508 4.94827 3.13417C4.56443 2.44978 4.231 1.7376 3.95068 1.00344C3.89619 0.878017 3.81634 0.76558 3.71629 0.67339C3.5909 0.569756 3.43749 0.507033 3.27625 0.493481H0.606651C0.606651 0.493481 0.195991 0.46339 0.0491037 0.703481C0.0167122 0.779268 0 0.860981 0 0.943572C0 1.02616 0.0167122 1.10788 0.0491037 1.18366C0.0491037 1.18366 2.16178 6.22526 4.53823 8.74622C6.70935 11.1772 9.17363 10.997 9.17363 10.997Z"
+                fill="currentColor"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a aria-label="Страница в Instagram" class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener">
+            <svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.85795 0H13.767C14.3352 0 14.8182 0.212121 15.2159 0.636364C15.6136 1.06061 15.8125 1.57576 15.8125 2.18182V13.8182C15.8125 14.4242 15.6136 14.9394 15.2159 15.3636C14.8182 15.7879 14.3352 16 13.767 16H2.85795C2.28977 16 1.80682 15.7879 1.40909 15.3636C1.01136 14.9394 0.8125 14.4242 0.8125 13.8182V2.18182C0.8125 1.57576 1.01136 1.06061 1.40909 0.636364C1.80682 0.212121 2.28977 0 2.85795 0ZM11.7216 2.18182V4.36364H13.767V2.18182H11.7216ZM10.2301 5.95455C9.71875 5.37879 9.07955 5.09091 8.3125 5.09091C7.54545 5.09091 6.89205 5.37879 6.35227 5.95455C5.84091 6.5 5.58523 7.18182 5.58523 8C5.58523 8.81818 5.84091 9.51515 6.35227 10.0909C6.89205 10.6364 7.54545 10.9091 8.3125 10.9091C9.07955 10.9091 9.71875 10.6364 10.2301 10.0909C10.7699 9.51515 11.0398 8.81818 11.0398 8C11.0398 7.18182 10.7699 6.5 10.2301 5.95455ZM2.17614 6.54545V13.8182C2.17614 14.303 2.40341 14.5455 2.85795 14.5455H13.767C14.2216 14.5455 14.4489 14.303 14.4489 13.8182V6.54545H12.1477C12.3182 7.0303 12.4034 7.51515 12.4034 8C12.4034 9.21212 12.0057 10.2424 11.2102 11.0909C10.4148 11.9394 9.44886 12.3636 8.3125 12.3636C7.17614 12.3636 6.21023 11.9394 5.41477 11.0909C4.61932 10.2424 4.22159 9.21212 4.22159 8C4.22159 7.51515 4.30682 7.0303 4.47727 6.54545H2.17614Z"
+                fill="currentColor"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a aria-label="Страница в Facebook" class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener">
+            <svg fill="none" height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.453 3.04987H8.375V0H6.1015C3.3595 0.125067 2.797 1.77493 2.75 3.5V5.02507H0.875V8H2.75V16H5.5625V8H7.88275L8.328 5.02507H5.5625V4.1C5.55495 3.96835 5.57212 3.83641 5.61302 3.71194C5.65392 3.58746 5.71772 3.47296 5.80067 3.37514C5.88362 3.27732 5.98405 3.19816 6.09607 3.1423C6.20809 3.08644 6.32944 3.05502 6.453 3.04987Z"
+                fill="currentColor"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="header-bottom">
+        <div class="header-menu flex">
+          <ul class="social-list menu-social list-reset">
+            <li class="social-item">
+              <a aria-label="Страница Вконтакте" class="social-link" href="https://vk.com/" target="_blank" rel="noopener">
+                <svg fill="none" height="11" viewBox="0 0 19 11" width="19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.17363 10.997H10.2884C10.3838 10.995 10.4776 10.9726 10.5638 10.9313C10.65 10.8899 10.7266 10.8305 10.7884 10.7569C10.8844 10.6045 10.9353 10.4274 10.935 10.2466C10.935 10.2466 10.9056 8.71613 11.6098 8.47604C12.2845 8.26604 13.1646 9.97645 14.1328 10.6369C14.5054 10.8886 14.947 11.0147 15.3945 10.997H17.8881C18.0641 10.997 19.1498 10.8469 18.5922 9.82505C18.5335 9.73509 18.2403 9.04491 16.7146 7.60436C15.1304 6.10395 15.3651 6.34404 17.2427 3.7629C18.3869 2.20231 18.8269 1.24194 18.7097 0.821943C18.6216 0.491897 17.7122 0.551762 17.7122 0.551762H14.8944C14.7739 0.535783 14.6513 0.556627 14.5425 0.611626C14.4396 0.688969 14.3587 0.792429 14.3078 0.911581C14.0207 1.69137 13.6673 2.44445 13.2518 3.16236C11.9901 5.35327 11.4916 5.47458 11.286 5.32318C10.8172 4.99313 10.9341 4.06286 10.9341 3.37236C10.9341 1.24163 11.2569 0.371218 10.3181 0.131126C9.88741 0.0187083 9.44154 -0.021838 8.99799 0.011081C8.0004 0.011081 7.1497 0.0110808 6.65091 0.251172C6.32807 0.401308 6.09337 0.761445 6.24025 0.791219C6.55575 0.824243 6.84795 0.974683 7.06032 1.21344C7.35378 1.60366 7.35378 2.53394 7.35378 2.53394C7.35378 2.53394 7.52974 5.02481 6.9725 5.32508C6.59122 5.53508 6.06305 5.11508 4.94827 3.13417C4.56443 2.44978 4.231 1.7376 3.95068 1.00344C3.89619 0.878017 3.81634 0.76558 3.71629 0.67339C3.5909 0.569756 3.43749 0.507033 3.27625 0.493481H0.606651C0.606651 0.493481 0.195991 0.46339 0.0491037 0.703481C0.0167122 0.779268 0 0.860981 0 0.943572C0 1.02616 0.0167122 1.10788 0.0491037 1.18366C0.0491037 1.18366 2.16178 6.22526 4.53823 8.74622C6.70935 11.1772 9.17363 10.997 9.17363 10.997Z"
+                    fill="currentColor"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a aria-label="Страница в Instagram" class="social-link" href="https://www.instagram.com/"
+                 target="_blank" rel="noopener">
+                <svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.85795 0H13.767C14.3352 0 14.8182 0.212121 15.2159 0.636364C15.6136 1.06061 15.8125 1.57576 15.8125 2.18182V13.8182C15.8125 14.4242 15.6136 14.9394 15.2159 15.3636C14.8182 15.7879 14.3352 16 13.767 16H2.85795C2.28977 16 1.80682 15.7879 1.40909 15.3636C1.01136 14.9394 0.8125 14.4242 0.8125 13.8182V2.18182C0.8125 1.57576 1.01136 1.06061 1.40909 0.636364C1.80682 0.212121 2.28977 0 2.85795 0ZM11.7216 2.18182V4.36364H13.767V2.18182H11.7216ZM10.2301 5.95455C9.71875 5.37879 9.07955 5.09091 8.3125 5.09091C7.54545 5.09091 6.89205 5.37879 6.35227 5.95455C5.84091 6.5 5.58523 7.18182 5.58523 8C5.58523 8.81818 5.84091 9.51515 6.35227 10.0909C6.89205 10.6364 7.54545 10.9091 8.3125 10.9091C9.07955 10.9091 9.71875 10.6364 10.2301 10.0909C10.7699 9.51515 11.0398 8.81818 11.0398 8C11.0398 7.18182 10.7699 6.5 10.2301 5.95455ZM2.17614 6.54545V13.8182C2.17614 14.303 2.40341 14.5455 2.85795 14.5455H13.767C14.2216 14.5455 14.4489 14.303 14.4489 13.8182V6.54545H12.1477C12.3182 7.0303 12.4034 7.51515 12.4034 8C12.4034 9.21212 12.0057 10.2424 11.2102 11.0909C10.4148 11.9394 9.44886 12.3636 8.3125 12.3636C7.17614 12.3636 6.21023 11.9394 5.41477 11.0909C4.61932 10.2424 4.22159 9.21212 4.22159 8C4.22159 7.51515 4.30682 7.0303 4.47727 6.54545H2.17614Z"
+                    fill="currentColor"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a aria-label="Страница в Facebook" class="social-link" href="https://www.facebook.com" target="_blank" rel="noopener">
+                <svg fill="none" height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.453 3.04987H8.375V0H6.1015C3.3595 0.125067 2.797 1.77493 2.75 3.5V5.02507H0.875V8H2.75V16H5.5625V8H7.88275L8.328 5.02507H5.5625V4.1C5.55495 3.96835 5.57212 3.83641 5.61302 3.71194C5.65392 3.58746 5.71772 3.47296 5.80067 3.37514C5.88362 3.27732 5.98405 3.19816 6.09607 3.1423C6.20809 3.08644 6.32944 3.05502 6.453 3.04987Z"
+                    fill="currentColor"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <nav class="nav">
+            <ul class="nav-list list-reset">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">О клубе</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#interior">Интерьер</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Меню</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#description">Преимущества</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#news">Новости</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn-close btn-reset las la-times">
+          </button>
+        </div>
+      </div>
+      <button aria-label="Меню" class="header-burger btn-reset">
+        <svg fill="none" height="18" viewBox="0 0 25 18" width="25" xmlns="http://www.w3.org/2000/svg">
+          <line stroke="currentColor" stroke-width="2" x1="25" x2="-8.74228e-08" y1="17" y2="17"/>
+          <line stroke="currentColor" stroke-width="2" x1="25" x2="-8.74228e-08" y1="9" y2="9"/>
+          <line stroke="currentColor" stroke-width="2" x1="25" x2="-8.74228e-08" y1="1" y2="0.999998"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <h1 class="visually-hidden">Дым кудрявый</h1>
+    <div class="hero-bg">
+      <div class="bg bg-left"></div>
+      <div class="bg bg-right"></div>
+    </div>
+    <div class="container hero-container flex">
+      <h2 class="hero-title title-reset">
+        Самый шикарный<br> курительный клуб Урала
+      </h2>
+      <ul class="list-info list-reset">
+        <li class="info-item">
+          <i class="icon-phone las la-phone"></i>
+          <a class="info-tel" href="tel:+73432989888">+7 (343) 298-98-88</a>
+        </li>
+        <li class="info-item">
+          <i class="icon-clock las la-clock"></i>
+          <div class="info-right">
+            <span class="info-time">вс-чт с 16:00 до 00:00</span>
+            <span class="info-time">пт-сб с 16:00 до 04:00</span>
+          </div>
+        </li>
+        <li class="info-item">
+          <i class="icon-map las la-map-marker-alt"></i>
+          <span class="info-location">Екатеринбург,<br> БЦ Высоцкий, 50 этаж</span>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <section class="about-us" id="about-us">
+    <div class="container about-us-container">
+      <div class="about-us-top">
+        <div class="about-us-left">
+          <h2 class="title about-us-title title-reset">
+            Возрождаем традицию
+          </h2>
+          <p class="about-us-description descr-reset">
+            Сигара в&nbsp;достойной компании, оттененная бокалом бренди, всегда была
+            не&nbsp;только обязательным атрибутом джентльмена, но&nbsp;и&nbsp;данью традициям. Поклонники сигар
+            встречались
+            в&nbsp;курительных
+            клубах, обсуждали последние новости и&nbsp;вершили судьбы мира. Прошло время, и&nbsp;теперь традицию
+            курительных
+            клубов возрождает &laquo;Дым кудрявый&raquo; в&nbsp;Екатеринбурге.
+          </p>
+        </div>
+        <div class="about-us-right top-img about-img"></div>
+      </div>
+      <div class="about-us-bottom">
+        <div class="about-us-card">
+          <h3 class="card-title title-reset">
+            Услуги
+          </h3>
+          <p class="card-descr descr-reset">
+            Серьезная сигарная карта и&nbsp;достойный выбор кальянов&nbsp;&mdash; standart, premium или de&nbsp;luxe.
+            Всегда в&nbsp;наличии элитный алкоголь, который составляет отличную партию сигарам. Всем,
+            кто за&nbsp;рулем бармен предложит авторский чай.
+          </p>
+        </div>
+        <div class="about-us-card about-img card-img"></div>
+        <div class="about-us-card">
+          <h3 class="card-title title-reset">
+            Развлечения
+          </h3>
+          <p class="card-descr descr-reset">
+            В&nbsp;клубе &laquo;Дым кудрявый&raquo; установлены плазменные панели, на&nbsp;которых можно посмотреть
+            спортивный матч. Также в&nbsp;гостевом зале вы&nbsp;найдете шахматы и&nbsp;шашки, в&nbsp;том числе
+            интересные авторские коллекции.
+          </p>
+        </div>
+        <div class="about-us-card">
+          <h3 class="card-title title-reset">
+            Для кого
+          </h3>
+          <p class="card-descr descr-reset">
+            Курительный клуб &#8470;&nbsp;1&nbsp;&laquo;Дым кудрявый&raquo; создан для деловых и&nbsp;неформальных
+            встреч.
+            В&nbsp;отличии от&nbsp;традиционных английских курительных клубов, заведение
+            в&nbsp;Екатеринбурге ждет и&nbsp;джентльменов, и&nbsp;леди.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="interior" id="interior">
+    <div class="container interior-container">
+      <h2 class="title interior-title title-reset">
+        Интерьер
+      </h2>
+
+      <div class="interior-swiper swiper">
+        <div class="interior-btn">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide interior-slide">
+            <img alt="Интерьер" class="interior-img" src="./image/1200/interior-image--1.jpg">
+          </div>
+          <div class="swiper-slide interior-slide">
+            <img alt="Интерьер" class="interior-img" src="./image/1200/interior-image--2.jpg">
+          </div>
+          <div class="swiper-slide interior-slide">
+            <img alt="Интерьер" class="interior-img" src="./image/1200/interior-image--3.jpg">
+          </div>
+          <div class="swiper-slide interior-slide">
+            <img alt="Интерьер" class="interior-img" src="./image/1200/interior-image--4.jpg">
+          </div>
+          <div class="swiper-slide interior-slide">
+            <img alt="Интерьер" class="interior-img" src="./image/1200/interior-image--1.jpg">
+          </div>
+          <div class="swiper-slide interior-slide">
+            <img alt="Интерьер" class="interior-img" src="./image/1200/interior-image--2.jpg">
+          </div>
+          <div class="swiper-slide interior-slide">
+            <img alt="Интерьер" class="interior-img" src="./image/1200/interior-image--3.jpg">
+          </div>
+          <div class="swiper-slide interior-slide">
+            <img alt="Интерьер" class="interior-img" src="./image/1200/interior-image--4.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menu" id="menu">
+    <div class="container menu-container">
+      <h2 class="title menu-title title-reset">
+        Меню
+      </h2>
+      <div class="group-btn">
+        <button class="menu-btn btn-active btn-reset" data-path="btn-1">
+          Фирменные кальяны
+        </button>
+        <button class="menu-btn btn-reset" data-path="btn-2">
+          Сигары и сигарилы
+        </button>
+        <button class="menu-btn btn-reset" data-path="btn-3">
+          Классические кальяны
+        </button>
+      </div>
+
+
+      <div class="swiper menu-swiper menu-active" data-target="btn-1">
+        <div class="menu-swiper-btn">
+          <div class="swiper-button-prev menu-prev"></div>
+          <div class="swiper-button-next menu-next"></div>
+        </div>
+        <ul class="menu-list list-reset swiper-wrapper">
+          <li class="menu-card swiper-slide card-exception">
+            <div class="card-top">
+              <h3 class="menu-card__title title-reset">
+                &laquo;Баунти&raquo;
+              </h3>
+              <span class="menu-card__price">
+              3000 ₽
+            </span>
+            </div>
+            <p class="menu-card__descr">
+              Добавки: шоколад, молоко, кокосовый сироп
+            </p>
+            <p class="menu-card__descr">
+              Чаша: ананас
+            </p>
+            <p class="menu-card__descr">
+              Крепость: средняя
+            </p>
+          </li>
+          <li class="menu-card swiper-slide card-exception">
+            <div class="card-top">
+              <h3 class="menu-card__title title-reset">
+                &laquo;Мохито&raquo;
+              </h3>
+              <span class="menu-card__price">
+              3000 ₽
+            </span>
+            </div>
+            <p class="menu-card__descr">
+              Добавки: мята, лайм, белый ром и много-много льда
+            </p>
+            <p class="menu-card__descr">
+              Чаша на выбор: яблоко, апельсин, грейпфрут
+            </p>
+            <p class="menu-card__descr">
+              Крепость: крепкий
+            </p>
+          </li>
+          <li class="menu-card swiper-slide card-exception">
+            <div class="card-top">
+              <h3 class="menu-card__title title-reset">
+                &laquo;Пина колада&raquo;
+              </h3>
+              <span class="menu-card__price">
+              3000 ₽
+            </span>
+            </div>
+            <p class="menu-card__descr">
+              Добавки: молоко, ананасовый сок, кокосовый сироп, лед
+            </p>
+            <p class="menu-card__descr">
+              Чаша: ананас
+            </p>
+            <p class="menu-card__descr">
+              Крепость: средняя
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper menu-swiper" data-target="btn-2">
+        <div class="menu-swiper-btn">
+          <div class="swiper-button-prev menu-prev"></div>
+          <div class="swiper-button-next menu-next"></div>
+        </div>
+        <ul class="menu-list swiper-wrapper list-reset">
+          <li class="menu-card swiper-slide">
+            <h3 class="menu-card__title card-title title-reset">
+              Куба
+            </h3>
+
+            <ul class="menu-card__list list-reset">
+              <li class="menu-card__item">
+                Cohiba Panatelas
+              </li>
+              <li class="menu-card__item">
+                Cohiba Siglo II
+              </li>
+              <li class="menu-card__item">
+                Cohiba Siglo IV
+              </li>
+              <li class="menu-card__item">
+                Cohiba Siglo V
+              </li>
+              <li class="menu-card__item">
+                Cohiba Robustos
+              </li>
+              <li class="menu-card__item">
+                H. Upmann Magnum
+              </li>
+              <li class="menu-card__item">
+                Hoyo De Mont. Epicure №
+              </li>
+              <li class="menu-card__item">
+                Montecristo №4
+              </li>
+              <li class="menu-card__item">
+                Partagas Serie №4
+              </li>
+              <li class="menu-card__item">
+                Romeo & Julieta Churchliss.
+              </li>
+              <li class="menu-card__item">
+                Romeo & Julieta №2
+              </li>
+            </ul>
+          </li>
+          <li class="menu-card swiper-slide">
+            <h3 class="menu-card__title card-title title-reset">
+              Доминикана
+            </h3>
+
+            <ul class="menu-card__list list-reset">
+              <li class="menu-card__item">
+                CT Reserva Decadencia Churchill
+              </li>
+              <li class="menu-card__item">
+                Arturo Fuente Anejo №77 Shark
+              </li>
+              <li class="menu-card__item">
+                Davidoff Escurio Gran Perfecto
+              </li>
+              <li class="menu-card__item">
+                Davidoff WSC Churchill
+              </li>
+              <li class="menu-card__item">
+                Zino Platinum XS
+              </li>
+              <li class="menu-card__item">
+                Zino Platinum Barrel
+              </li>
+              <li class="menu-card__item">
+                Macanudo Cafe Ascots
+              </li>
+              <li class="menu-card__item">
+                Macanudo Maduro Ascots
+              </li>
+            </ul>
+          </li>
+          <li class="menu-card swiper-slide">
+            <h3 class="menu-card__title card-title title-reset">
+              Никарагуа
+            </h3>
+
+            <ul class="menu-card__list list-reset">
+              <li class="menu-card__item">
+                Nub Sun Grown 460 Tubos
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="swiper menu-swiper" data-target="btn-3">
+        <div class="menu-swiper-btn">
+          <div class="swiper-button-prev menu-prev"></div>
+          <div class="swiper-button-next menu-next"></div>
+        </div>
+        <ul class="menu-list swiper-wrapper list-reset">
+          <li class="menu-card swiper-slide">
+            <h3 class="menu-card__title card-title title-reset">
+              Кальяны на глиняной чаше
+            </h3>
+            <ul class="menu-card__list list-reset">
+              <li class="menu-card__item">
+                <p class="item-descr">
+                  Standart:
+                  <span class="menu-card__price">
+                1200 ₽
+                </span>
+                </p>
+                <p class="item-descr">
+                  Крепость: <span class="item-descr__small">легкий</span>
+                </p>
+              </li>
+              <li class="menu-card__item">
+                <p class="item-descr">
+                  Premium:
+                  <span class="menu-card__price">
+                1500 ₽
+                </span>
+                </p>
+                <p class="item-descr">
+                  Крепость: <span class="item-descr__small">крепкий</span>
+                </p>
+              </li>
+              <li class="menu-card__item">
+                <h4 class="item-title title-reset">
+                  Замена чаши
+                </h4>
+                <p class="item-descr">
+                  Standart:
+                  <span class="menu-card__price">
+                900 ₽
+                </span>
+                </p>
+                <p class="item-descr">
+                  Premium:
+                  <span class="menu-card__price">
+                1200 ₽
+                </span>
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-card swiper-slide">
+            <h3 class="menu-card__title card-title title-reset">
+              Кальяны на фруктовой чаше
+            </h3>
+            <ul class="menu-card__list list-reset">
+              <li class="menu-card__item">
+                <h4 class="item-title title-reset">
+                  Апельсин
+                </h4>
+                <p class="item-descr">
+                  Standart:
+                  <span class="menu-card__price">
+                1200 ₽
+                </span>
+                </p>
+                <p class="item-descr">
+                  Premium:
+                  <span class="menu-card__price">
+                1900 ₽
+                </span>
+                </p>
+              </li>
+              <li class="menu-card__item">
+                <h4 class="item-title title-reset">
+                  Яблоко
+                </h4>
+                <p class="item-descr">
+                  Standart:
+                  <span class="menu-card__price">
+                1600 ₽
+                </span>
+                </p>
+                <p class="item-descr">
+                  Premium:
+                  <span class="menu-card__price">
+                1900 ₽
+                </span>
+                </p>
+              </li>
+              <li class="menu-card__item">
+                <h4 class="item-title title-reset">
+                  Грейпфрут
+                </h4>
+                <p class="item-descr">
+                  Standart:
+                  <span class="menu-card__price">
+                1900 ₽
+                </span>
+                </p>
+                <p class="item-descr">
+                  Premium:
+                  <span class="menu-card__price">
+                2300 ₽
+                </span>
+                </p>
+              </li>
+              <li class="menu-card__item">
+                <h4 class="item-title title-reset">
+                  Ананас
+                </h4>
+                <p class="item-descr">
+                  Standart:
+                  <span class="menu-card__price">
+                2200 ₽
+                </span>
+                </p>
+                <p class="item-descr">
+                  Premium:
+                  <span class="menu-card__price">
+                2700 ₽
+                </span>
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-card swiper-slide">
+            <h3 class="menu-card__title card-title title-reset">
+              Добавки в колбу
+            </h3>
+            <ul class="menu-card__list list-reset">
+              <li class="menu-card__item">
+                Вино:
+                <span class="menu-card__price">
+                600 ₽
+                </span>
+              </li>
+              <li class="menu-card__item">
+                Мята:
+                <span class="menu-card__price">
+                100 ₽
+                </span>
+              </li>
+              <li class="menu-card__item">
+                Молоко:
+                <span class="menu-card__price">
+                200 ₽
+                </span>
+              </li>
+              <li class="menu-card__item">
+                Сок в ассортименте:
+                <span class="menu-card__price">
+                300 ₽
+                </span>
+              </li>
+            </ul>
+            <span class="menu-note">
+            Вы&nbsp;можете добавить в&nbsp;кальян любой алкоголь из&nbsp;барной карты ресторана Panorama A.S.P.
+          </span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <section class="description" id="description">
+    <div class="description-left"></div>
+    <div class="container description-container">
+      <div class="description-right">
+        <h2 class="title description-title title-reset">
+          У нас уютно
+        </h2>
+        <ul class="description-list list-reset">
+          <li class="description-item">
+            Шикарный вид на город с 50-го этажа БЦ «Высоцкий»
+          </li>
+          <li class="description-item">
+            Авторские миксы, которые меняются каждый месяц
+            и&nbsp;способны удовлетворить каждого требовательного гостя
+          </li>
+          <li class="description-item">
+            Уникальная атмосфера уединения и&nbsp;комфорта
+          </li>
+          <li class="description-item">
+            Персонал&nbsp;&mdash; подготовленные мастера своего дела
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="news" id="news">
+    <div class="container news-container">
+      <h2 class="title title-reset news-title">
+        Новости
+      </h2>
+      <div class="swiper news-swiper">
+        <div class="news-btn">
+          <div class="swiper-button-prev news-btn__prev"></div>
+          <div class="swiper-button-next news-btn__next"></div>
+        </div>
+        <ul class="swiper-wrapper news-wrapper list-reset">
+          <li class="swiper-slide news-slide">
+            <img alt="" class="news-slide__img" src="image/1200/news-img--1.jpg">
+            <div class="slide-bottom">
+              <span class="slide-date">
+                8 апреля
+              </span>
+              <h3 class="slide-title title-reset">
+                Наш курительный клуб ежедневно работает с 16:00
+              </h3>
+            </div>
+          </li>
+          <li class="swiper-slide news-slide">
+            <img alt="" class="news-slide__img" src="image/1200/news-img--2.jpg">
+            <div class="slide-bottom">
+              <span class="slide-date">
+                24 марта
+              </span>
+              <h3 class="slide-title title-reset">
+                Дорогие гости, по&nbsp;выходным наш курительный клуб работает до&nbsp;4&nbsp;утра
+              </h3>
+            </div>
+          </li>
+          <li class="swiper-slide news-slide">
+            <img alt="" class="news-slide__img" src="image/1200/news-img--3.jpg">
+            <div class="slide-bottom">
+              <span class="slide-date">
+                12 марта
+              </span>
+              <h3 class="slide-title title-reset">
+                Готовимся к&nbsp;вечеру с&nbsp;сигарами Davidoff
+              </h3>
+            </div>
+          </li>
+          <li class="swiper-slide news-slide">
+            <img alt="" class="news-slide__img" src="image/1200/news-img--1.jpg">
+            <div class="slide-bottom">
+              <span class="slide-date">
+                8 апреля
+              </span>
+              <h3 class="slide-title title-reset">
+                Наш курительный клуб ежедневно работает с 16:00
+              </h3>
+            </div>
+          </li>
+          <li class="swiper-slide news-slide">
+            <img alt="" class="news-slide__img" src="image/1200/news-img--2.jpg">
+            <div class="slide-bottom">
+              <span class="slide-date">
+                24 марта
+              </span>
+              <h3 class="slide-title title-reset">
+                Дорогие гости, по&nbsp;выходным наш курительный клуб работает до&nbsp;4&nbsp;утра
+              </h3>
+            </div>
+          </li>
+          <li class="swiper-slide news-slide">
+            <img alt="" class="news-slide__img" src="image/1200/news-img--3.jpg">
+            <div class="slide-bottom">
+              <span class="slide-date">
+                12 марта
+              </span>
+              <h3 class="slide-title title-reset">
+                Готовимся к&nbsp;вечеру с&nbsp;сигарами Davidoff
+              </h3>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+  <section class="preview">
+    <div class="container preview-container ">
+      <div class="preview-left">
+        <h3 class="preview-title title-reset">
+          Наш клуб входит в&nbsp;состав ресторана Panorama ASP
+        </h3>
+        <p class="preview-descr descr-reset">
+          Поэтому гости могут не&nbsp;только насладиться дымным, но&nbsp;и&nbsp;попробовать самые разнообразные
+          коктейли, а&nbsp;также вкусно поесть
+        </p>
+      </div>
+      <div class="preview-right">
+        <button class="preview-btn btn-reset">
+          Подробнее о ресторане
+          <i class="las icon-arrow la-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="contacts" id="contacts">
+    <div class="contacts-left map" id="map"></div>
+    <div class="contacts-right">
+      <h2 class="title title-reset contacts-title">
+        Контакты
+      </h2>
+      <ul class="contacts-right__list list-reset">
+        <li class="contacts-right__item">
+          <i class="icon-phone las la-phone"></i>
+          <a class="contacts-right__tel" href="tel:+73432989888">+7 (343) 298-98-88</a>
+        </li>
+        <li class="contacts-right__item">
+          <i class="icon-map las la-map-marker-alt"></i>
+          <span class="contacts-right__location">Екатеринбург, ул. Малышева 51,<br> БЦ Высоцкий, 50 этаж</span>
+        </li>
+        <li class="contacts-right__item">
+          <i class="icon-clock las la-clock"></i>
+          <div class="right-info">
+            <span class="right-info__time">вс-чт с 16:00 до 00:00</span>
+            <span class="right-info__time">пт-сб с 16:00 до 04:00</span>
+          </div>
+        </li>
+      </ul>
+      <div class="group-link">
+        <a class="contacts-link link-facebook" href="https://www.facebook.com/pages/Faceebok/386412888704"
+           target="_blank" rel="noopener">
+          Facebook
+        </a>
+        <a class="contacts-link link-inst" href="https://www.instagram.com/" target="_blank" rel="noopener">
+          Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
