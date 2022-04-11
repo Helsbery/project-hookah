@@ -658,12 +658,14 @@ img {
 
 .description-left {
     position: absolute;
+    top: -50%;
     left: 0;
     width: 60%;
     height: 100%;
     background-image: url("../image/1200/descr-left--img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    transform: translateY(50%);
 }
 
 .description-right {
